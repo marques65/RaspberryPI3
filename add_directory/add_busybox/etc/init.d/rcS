@@ -1,0 +1,11 @@
+#!/bin/sh
+for i in /etc/init.d/S??*; do
+    case "$i" in
+        *.sh)
+            . $i
+        ;;
+        *)
+            $i start
+        ;;
+     esac
+done

@@ -1,0 +1,12 @@
+[submodule "u-boot"]
+	path = u-boot
+	url = https://gitlab.denx.de/u-boot/u-boot
+[submodule "linux"]
+	path = linux
+	url = https://github.com/torvalds/linux
+[submodule "busybox"]
+	path = busybox
+	url = https://github.com/mirror/busybox
+[submodule "crosstool-ng"]
+	path = crosstool-ng
+	url = https://github.com/crosstool-ng/crosstool-ng

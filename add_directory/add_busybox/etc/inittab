@@ -1,0 +1,11 @@
+# Startup the system
+null::sysinit:/bin/mount -t proc proc /proc
+null::sysinit:/bin/mount -t sysfs sysfs /sys
+
+# now run any rc scripts
+::sysinit:/etc/init.d/rcS
+
+# Put a getty on the serial port
+#::respawn:/sbin/getty -L ttyS1 115200 v100
+
+::respawn:/sbin/getty -n -l /bin/sh -L ttyS1 115200 vt100

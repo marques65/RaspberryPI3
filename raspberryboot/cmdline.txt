@@ -1,0 +1,1 @@
+console=tty1 console=ttyAMA0,115200 root=PARTUUID=97709164-02 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait  plymouth.ignore-serial-consoles ip=<192.168.0.200>
